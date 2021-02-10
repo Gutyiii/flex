@@ -4,13 +4,13 @@ body {background: gray;}
 
 main {background: pink;}
 
-main, header, nav, footer, artcile {
+main, header, nav, footer, article {
     border: 1px solid black;
     padding: 5px;
     box-sizing: border-box;
 }
 
-header, nav, footer, artcile {
+header, nav, footer, article {
     background: white;
     margin: 5px;
 }
@@ -19,6 +19,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
 }
 
 header, nav, footer {
@@ -26,5 +28,28 @@ header, nav, footer {
 }
 
 article {
-    flex:1 0 calc(33.33333% - 10px);
+    flex:0 0 calc(33.33333% - 10px);
 }
+
+main article:nth-child(5) {
+    color: red;
+    order: -1;
+}
+
+header, nav {order: -10;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
