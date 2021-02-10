@@ -7,8 +7,24 @@ main {background: pink;}
 main, header, nav, footer, artcile {
     border: 1px solid black;
     padding: 5px;
+    box-sizing: border-box;
 }
 
 header, nav, footer, artcile {
     background: white;
+    margin: 5px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header, nav, footer {
+    flex: 0 0 100%;
+}
+
+article {
+    flex:1 0 calc(33.33333% - 10px);
 }
